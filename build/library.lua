@@ -1,11 +1,21 @@
-local Core = script.Parent:WaitForChild("core")
-local Components = script.Parent:WaitForChild("components")
+local root = script.Parent or script
+
+local Core = root:FindFirstChild("core")
+local Components = root:FindFirstChild("components")
+
+if not Core then
+    Core = script:FindFirstChild("core")
+end
+if not Components then
+    Components = script:FindFirstChild("components")
+end
 
 local a = require(Core.registry)
 local b = require(Core.input)
 local c = require(Core.loop)
 local d = require(Core.theme)
 local e = require(Components.window)
+
 
 
 local f={}
