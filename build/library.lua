@@ -1,8 +1,12 @@
-local a=require(script.core.registry)
-local b=require(script.core.input)
-local c=require(script.core.loop)
-local d=require(script.core.theme)
-local e=require(script.components.window)
+local Core = script.Parent:WaitForChild("core")
+local Components = script.Parent:WaitForChild("components")
+
+local a = require(Core.registry)
+local b = require(Core.input)
+local c = require(Core.loop)
+local d = require(Core.theme)
+local e = require(Components.window)
+
 
 local f={}
 f.__index=f
