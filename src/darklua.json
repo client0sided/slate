@@ -1,0 +1,6 @@
+{
+  "bundle": {
+    "entry": "src/init.lua",
+    "output": "build/library.lua"
+  }
+}
