@@ -1,0 +1,11 @@
+{
+  "rules": [
+    "remove_comments",
+    "remove_whitespace",
+    "rename_variables"
+  ],
+  "bundle": {
+    "entry": "src/init.lua",
+    "output": "build/library.lua"
+  }
+}
